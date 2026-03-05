@@ -1,3 +1,8 @@
+![Django](https://img.shields.io/badge/Django-5-green)
+![React](https://img.shields.io/badge/React-19-blue)
+![Docker](https://img.shields.io/badge/Docker-ready-blue)
+![Postgres](https://img.shields.io/badge/PostgreSQL-16-blue)
+
 # Test Task: Dog Selector
 
 Dog Selector is a small internal tool for managing dog profiles (CRUD), including search, sorting, pagination, inline rating updates, bulk removal, and a Contact Us form that stores submissions in the database and is visible in Django Admin.
