@@ -1,0 +1,84 @@
+/* Reset Vite starter styles so Bootstrap layout works normally */
+
+:root {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #EEF3FA;
+  color: #212529; 
+}
+
+a {
+  text-decoration: none;
+}
+
+.pagination .page-link {
+  border-radius: 6px;
+}
+
+.pagination .page-item.active .page-link {
+  font-weight: 600;
+}
+
+th {
+  font-weight: 600;
+}
+
+.table td {
+  font-weight: 400;
+}
+
+.sortable-th {
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.sortable-th > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px; /* space between text and icon */
+}
+
+/* stacked icon */
+.sort-icon {
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 8px;       /* tight stack like figma */
+  font-size: 10px;        /* smaller than header text */
+  opacity: 0.45;          /* inactive look */
+  transform: translateY(-1px); /* tiny vertical align tweak */
+}
+
+.sort-icon.active {
+  opacity: 1;
+}
+
+.sort-icon .chev {
+  height: 8px;
+}
+
+/* highlight the active direction */
+.sort-icon .chev.on {
+  opacity: 1;
+}
+
+.sort-icon .chev:not(.on) {
+  opacity: 0.35;
+}
+
+.table thead th {
+  vertical-align: middle;
+}
+
+.th-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}

@@ -1,0 +1,150 @@
+/* page background like Dogs page */
+.contact-page {
+  background: #eef3fb;
+  min-height: calc(100vh - 60px);
+}
+
+/* MAIN LAYOUT:
+   Left takes remaining space, right is fixed and flush to edge */
+.contact-layout {
+  min-height: calc(100vh - 60px);
+  display: grid;
+  grid-template-columns: 1fr 520px;
+}
+
+/* LEFT: vertically centered */
+.contact-left {
+  display: flex;
+  align-items: center; /* vertical centering */
+  padding: 56px 0;
+}
+
+/* left content should be centered */
+.contact-left-inner {
+  max-width: 760px;
+  text-align: center;
+}
+
+/* typography */
+.contact-title {
+  font-size: 56px;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  color: #1f2a44;
+}
+
+.contact-subtitle {
+  color: #3a4a66;
+}
+
+/* woof card should feel larger and centered */
+.woof-card {
+  border-radius: 14px;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 34px 36px;
+}
+
+.woof-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.woof-text {
+  color: #2b3a56;
+  margin: 0;
+  text-align: left; /* looks more like figma inside the card */
+}
+
+/* ratings row centered under woof card */
+.ratings-row {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  color: #1f2a44;
+}
+
+/* RIGHT: full height white panel on extreme right */
+.contact-right-panel {
+  background: #ffffff;
+  min-height: calc(100vh - 60px);
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.08);
+  border-radius: 18px 0 0 18px; /* panel look while still flush right */
+  display: flex;
+  align-items: center; /* center the inner card vertically */
+  padding: 40px;
+}
+
+/* inner content width */
+.contact-right-inner {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+/* the FORM itself is NOT another big card; it sits inside the panel */
+.contact-form-card {
+  background: transparent;
+}
+
+/* thank you should be a green card INSIDE the white panel */
+.thank-you-card {
+  background: #d5efe0;
+  border-radius: 14px;
+  padding: 28px;
+  border: 1px solid rgba(15, 81, 50, 0.15);
+}
+
+.thank-you-title {
+  color: #0f5132;
+  font-weight: 800;
+}
+
+.thank-you-text {
+  color: #0f5132;
+}
+
+/* validation */
+.form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+.invalid-feedback {
+  color: #dc3545;
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+/* Responsive: stack panels */
+@media (max-width: 992px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-right-panel {
+    border-radius: 18px;
+    margin: 24px 16px 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    min-height: auto;
+  }
+
+  .contact-left {
+    padding: 48px 0 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-title {
+    font-size: 40px;
+  }
+
+  .woof-text {
+    text-align: left;
+  }
+}
+
+.form-control {
+  height: 48px;
+}
