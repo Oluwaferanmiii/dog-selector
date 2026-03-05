@@ -41,6 +41,22 @@ Dog Selector is a small internal tool for managing dog profiles (CRUD), includin
 
 ---
 
+## Screenshots
+
+### Dog List Page
+
+![Dog List](frontend/src/assets/dog-list.png)
+
+### Edit Offcanvas
+
+![Edit Panel](frontend/src/assets/edit-offcanvas.png)
+
+### Contact Page
+
+![Contact Page](frontend/src/assets/contact-page.png)
+
+---
+
 ## Project Structure
 
 ```
